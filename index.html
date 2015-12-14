@@ -39,6 +39,10 @@
                         cursor: pointer;
                     }
 
+                    .allLabels {
+                        font-family: fantasy;
+                    }
+
                     #football {
                         color: red;
                     }
@@ -83,6 +87,18 @@
                         bottom: 0;
                         left: 30%;
                         text-align: center;
+                    }
+
+                    #legend {
+                        position: fixed;
+                        bottom: 0;
+                        width: 200px;
+                        height: 200px;
+                    }
+
+                    #legend img {
+                        max-height: 100%;
+                        max-width: 100%;
                     }
 
                     .content {
@@ -249,43 +265,52 @@
         <br>
         <form id="seasonchecks">
             <input type="checkbox" name="seasons" id="Winter" checked>
-            <label for="Winter" class="labelExample">Winter</label>
+            <label for="Winter" class="allLabels">Winter</label>
             <input type="checkbox" name="seasons" id="Spring" checked>
-            <label for="Spring">Spring</label>
+            <label for="Spring" class="allLabels">Spring</label>
             <input type="checkbox" name="seasons" id="Summer" checked>
-            <label for="Summer">Summer</label>
+            <label for="Summer" class="allLabels">Summer</label>
             <input type="checkbox" name="seasons" id="Fall" checked>
-            <label for="Fall">Fall</label>
+            <label for="Fall" class="allLabels">Fall</label>
         </form>
         <br>
         <form id="sportchecks">
             <input type="checkbox" name="sports" id="football" checked>
-            <label for="football" id="football">Football</label>
+            <label for="football" id="football" class="allLabels">Football</label>
             <input type="checkbox" name="sports" id="baseball" checked>
-            <label for="football" id="baseball">Baseball</label>
+            <label for="football" id="baseball" class="allLabels">Baseball</label>
             <input type="checkbox" name="sports" id="soccer" checked>
-            <label for="football" id="soccer">Soccer</label>
+            <label for="football" id="soccer" class="allLabels">Soccer</label>
             <input type="checkbox" name="sports" id="basketball" checked>
-            <label for="football" id="basketball">Basketball</label>
+            <label for="football" id="basketball" class="allLabels">Basketball</label>
             <input type="checkbox" name="sports" id="hockey" checked>
-            <label for="football" id="hockey">Hockey</label>
+            <label for="football" id="hockey" class="allLabels">Hockey</label>
             <input type="checkbox" name="sports" id="golf" checked>
-            <label for="football" id="golf">Golf</label>
+            <label for="football" id="golf" class="allLabels">Golf</label>
             <input type="checkbox" name="sports" id="running" checked>
-            <label for="football" id="running">Running</label>
+            <label for="football" id="running" class="allLabels">Running</label>
             <input type="checkbox" name="sports" id="lacrosse" checked>
-            <label for="football" id="lacrosse">Lacrosse</label>
+            <label for="football" id="lacrosse" class="allLabels">Lacrosse</label>
             <input type="checkbox" name="sports" id="cycling" checked>
-            <label for="football">Cycling</label>
+            <label for="football" class="allLabels">Cycling</label>
         </form>
         <br>
         <form id="capturedevicechecks">
-            <input type="checkbox" name="capturedevice" id="nikon" checked>Nikon
-            <input type="checkbox" name="capturedevice" id="canon" checked>Canon
-            <input type="checkbox" name="capturedevice" id="apple" checked>Apple
-            <input type="checkbox" name="capturedevice" id="sony" checked>Sony
-            <input type="checkbox" name="capturedevice" id="panasonic" checked>Panasonic
-            <input type="checkbox" name="capturedevice" id="other" checked>Other
+            <input type="checkbox" name="capturedevice" id="nikon" checked>
+            <label for="nikon" class="allLabels">Nikon</label>
+            <input type="checkbox" name="capturedevice" id="canon" checked>
+            <label for="canon" class="allLabels">Canon</label>
+            <input type="checkbox" name="capturedevice" id="apple" checked>
+            <label for="apple" class="allLabels">Apple</label>
+            <input type="checkbox" name="capturedevice" id="sony" checked>
+            <label for="sony" class="allLabels">Sony</label>
+            <input type="checkbox" name="capturedevice" id="panasonic" checked>
+            <label for="panasonic" class="allLabels">Panasonic</label>
+            <input type="checkbox" name="capturedevice" id="other" checked>
+            <label for="other" class="allLabels">Other</label>
         </form>
+    </div>
+    <div id="legend">
+        <img src="Legend%20for%20Semantics.jpg">
     </div>
 </body>

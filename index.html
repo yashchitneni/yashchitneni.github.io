@@ -12,12 +12,12 @@
 
 <body>
     <h1> Flickr Sports Data Visualized</h1>
-    <h3><a href=""> Concept </a></h3>
+    <h3><a href="https://ideamache.ecologylab.net/e/qI3EddSoZj/"> Concept </a></h3>
     <h6> Zach Lawless and Yash Chitneni</h6>
     <div id="svgFile" class="left">
         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="959" height="593">
+            <svg id="randomStuff" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1700 700">
 
                 <style type="text/css">
                     h1,
@@ -25,6 +25,10 @@
                     h6 {
                         text-align: center;
                         color: bisque;
+                    }
+
+                    #randomStuff {
+                        position: fixed;
                     }
 
                     body {
@@ -81,12 +85,13 @@
                     }
 
                     .content {
-                        margin-left: 55%;
+                        position: fixed;
+                        width: 50%;
+                        left: 55%;
                     }
 
                     .left {
                         position: fixed;
-                        width: 45%;
                     }
 
                     .state {
@@ -238,7 +243,7 @@
             </svg>
     </div>
 
-    <div class="content left"></div>
+    <div class="content"></div>
     <div id="checkBoxes">
         <br>
         <form id="seasonchecks">

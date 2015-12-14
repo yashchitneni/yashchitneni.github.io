@@ -56,9 +56,11 @@ $(document).ready(function () {
         .scale(y)
         .orient("left");
 
+    var numberOne = width + margin.left + margin.right + 100;
+    var numberTwo = height + margin.top + margin.bottom;
+
     var svg = d3.select(".content").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
+        .attr("viewBox", "0 0 " + numberOne + " " + numberTwo)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
